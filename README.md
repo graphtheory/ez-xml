@@ -1,5 +1,12 @@
 # EZ-XML
 
+
+![Travis](https://img.shields.io/travis/graphtheory/ez-xml.svg)
+[![Coverage Status](https://coveralls.io/repos/github/graphtheory/ez-xml/badge.svg?branch=master)](https://coveralls.io/github/graphtheory/ez-xml?branch=master)
+![npm](https://img.shields.io/npm/v/ez-xml.svg)
+![npm](https://img.shields.io/npm/l/ez-xml.svg)
+
+
 EZ-XML is a XML library that allows you to easily extract information from XML documents with XPath expressions.
 
 ## Docs
