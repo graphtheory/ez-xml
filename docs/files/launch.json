@@ -1,0 +1,152 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Example test",
+            "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "args": [
+                "-u", "tdd",
+                "--timeout", "999999",
+                "--colors",
+                "./build/test/example_test.js"
+            ],
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "stopOnEntry": false,
+            "sourceMaps": true,
+            "cwd": "${workspaceRoot}", 
+            "outFiles": [
+                "${workspaceRoot}/build/**/*.js"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "XML Node test",
+            "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "args": [
+                "-u", "tdd",
+                "--timeout", "999999",
+                "--colors",
+                "./build/test/xml_node_test.js"
+            ],
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "stopOnEntry": false,
+            "sourceMaps": true,
+            "cwd": "${workspaceRoot}", 
+            "outFiles": [
+                "${workspaceRoot}/build/**/*.js"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "XML Parser test",
+            "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "args": [
+                "-u", "tdd",
+                "--timeout", "999999",
+                "--colors",
+                "./build/test/xml_parser_test.js"
+            ],
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "stopOnEntry": false,
+            "sourceMaps": true,
+            "cwd": "${workspaceRoot}", 
+            "outFiles": [
+                "${workspaceRoot}/build/**/*.js"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "XML Result test",
+            "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "args": [
+                "-u", "tdd",
+                "--timeout", "999999",
+                "--colors",
+                "./build/test/xml_result_test.js"
+            ],
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "stopOnEntry": false,
+            "sourceMaps": true,
+            "cwd": "${workspaceRoot}", 
+            "outFiles": [
+                "${workspaceRoot}/build/**/*.js"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "XPATH Parser",
+            "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "args": [
+                "-u", "tdd",
+                "--timeout", "999999",
+                "--colors",
+                "./build/test/xpath_parser_test.js"
+            ],
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "stopOnEntry": false,
+            "sourceMaps": true,
+            "cwd": "${workspaceRoot}", 
+            "outFiles": [
+                "${workspaceRoot}/build/**/*.js"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "XPATH Tokenizer",
+            "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "args": [
+                "-u", "tdd",
+                "--timeout", "999999",
+                "--colors",
+                "./build/test/xpath_tokenizer_test.js"
+            ],
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "stopOnEntry": false,
+            "sourceMaps": true,
+            "cwd": "${workspaceRoot}", 
+            "outFiles": [
+                "${workspaceRoot}/build/**/*.js"
+            ]
+        },
+    ]
+}

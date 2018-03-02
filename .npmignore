@@ -1,0 +1,15 @@
+# Directories
+.vscode
+coverage
+docs
+src
+test
+
+# Files
+tsconfig.json
+tslint.json
+*.js.map
+*.test.js
+.editorconfig
+.istanbul.yml
+.travis.yml

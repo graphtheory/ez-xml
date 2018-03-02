@@ -1,0 +1,31 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+    ],
+    "jsRules": {},
+    "rules": {
+        "no-empty-interface": true,
+        "no-import-side-effect": true,
+        "no-internal-module": true,
+        "no-magic-numbers": false,
+        "no-any": true,
+        "no-reference": true,
+        "no-var-requires": true,
+        "eofline": true,
+        "indent": [true, "spaces"],
+        "no-default-export": true,
+        "no-use-before-declare": true,
+        "radix": true,
+        "no-unused-variable": true,
+        "no-string-throw": true,
+        "no-invalid-this": true,
+        "no-duplicate-super": true,
+        "no-eval": true,
+        "no-floating-promises": true,
+        "semicolon": [true, "always"],
+        "only-arrow-functions": [true, "allow-declarations", "allow-named-functions"],
+        "no-debugger": true,
+        "whitespace": [true, "check-branch", "check-decl", "check-operator", "check-separator", "check-rest-spread", "check-type", "check-type-operator", "check-preblock"]
+    },
+    "rulesDirectory": []
+}
