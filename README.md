@@ -9,6 +9,8 @@
 
 EZ-XML is a XML library that allows you to easily extract information from XML documents with XPath expressions.
 
+[![NPM](https://nodei.co/npm/ez-xml.png?compact=true)](https://nodei.co/npm/ez-xml/)
+
 ## Docs
 
 * [API Reference](https://github.com/graphtheory/ez-xml/blob/master/docs/API.md)
