@@ -1,6 +1,6 @@
 {
   "name": "ez-xml",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Parse and query XML files",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
