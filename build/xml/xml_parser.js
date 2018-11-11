@@ -556,6 +556,9 @@ class XMLParser {
                         this.cdata = "";
                         this.state = 24;
                     }
+                    else if (c === "]" && (str.charAt(i) == ">" || str.charAt(i) == "]")) {
+                        this.cdata += ']';
+                    }
                     else {
                         this.cdata += "]]" + c;
                         this.state = 6;

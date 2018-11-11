@@ -359,6 +359,42 @@ describe("XMLParser", () => {
             assert.equal(result.length, 1);
             assert.equal(result[0].value, "John]Smith]]Senior");
         });
+
+        it("Fix issue #1, there maybe consecutive ']' before CDATA ends, which causes parse error or cannot parse the CDATA text correctly.", () => {
+            const parsed1 = parse(`<?xml version="1.0" encoding="utf-8"?><root><![CDATA[John]Smith]]Senior]]]></root>`);
+            const result1 = parsed1.find("//root/text()");
+            const parsed2 = parse(`<?xml version="1.0" encoding="utf-8"?><root><![CDATA[John]Smith]]Senior]]]]></root>`);
+            const result2 = parsed2.find("//root/text()");
+            const parsed3 = parse(`<?xml version="1.0" encoding="utf-8"?><root><![CDATA[John]Smith]]Senior]]]]]></root>`);
+            const result3 = parsed3.find("//root/text()");
+            const parsed4 = parse(`<?xml version="1.0" encoding="utf-8"?><root><![CDATA[John]Smith]]Senior]]]]]]></root>`);
+            const result4 = parsed4.find("//root/text()");
+            const parsed5 = parse(`<?xml version="1.0" encoding="utf-8"?><root><![CDATA[John]Smith]]Senior]t]]]]]></root>`);
+            const result5 = parsed5.find("//root/text()");
+            const parsed6 = parse(`<?xml version="1.0" encoding="utf-8"?><root><![CDATA[John]Smith]]Senior]]t]]]]></root>`);
+            const result6 = parsed6.find("//root/text()");
+            const parsed7 = parse(`<?xml version="1.0" encoding="utf-8"?><root><![CDATA[John]Smith]]Senior]]]t]]]></root>`);
+            const result7 = parsed7.find("//root/text()");
+            const parsed8 = parse(`<?xml version="1.0" encoding="utf-8"?><root><![CDATA[John]Smith]]Senior]]]]t]]></root>`);
+            const result8 = parsed8.find("//root/text()");
+
+            assert.equal(result1.length, 1);
+            assert.equal(result1[0].value, "John]Smith]]Senior]");
+            assert.equal(result2.length, 1);
+            assert.equal(result2[0].value, "John]Smith]]Senior]]");
+            assert.equal(result3.length, 1);
+            assert.equal(result3[0].value, "John]Smith]]Senior]]]");
+            assert.equal(result4.length, 1);
+            assert.equal(result4[0].value, "John]Smith]]Senior]]]]");
+            assert.equal(result5.length, 1);
+            assert.equal(result5[0].value, "John]Smith]]Senior]t]]]");
+            assert.equal(result6.length, 1);
+            assert.equal(result6[0].value, "John]Smith]]Senior]]t]]");
+            assert.equal(result7.length, 1);
+            assert.equal(result7[0].value, "John]Smith]]Senior]]]t]");
+            assert.equal(result8.length, 1);
+            assert.equal(result8[0].value, "John]Smith]]Senior]]]]t");
+        });
     });
 
     describe("DTD", () => {
