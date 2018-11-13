@@ -564,6 +564,8 @@ export class XMLParser {
                         this.newTextNode();
                         this.cdata = "";
                         this.state = ParserState.TEXT;
+                    } else if (c === "]" && (str.charAt(i) == ">" || str.charAt(i) == "]")) {
+                        this.cdata += ']';
                     } else {
                         this.cdata += "]]" + c;
                         this.state = ParserState.CDATA;
