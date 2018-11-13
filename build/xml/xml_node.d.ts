@@ -13,5 +13,5 @@ export declare class XMLNode {
     attr(name: string): string | undefined;
     text(query?: string): string;
     toJSON(): SerializedXMLElement;
-    private innerText(nodes);
+    private innerText;
 }

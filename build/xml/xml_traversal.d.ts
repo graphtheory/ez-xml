@@ -4,12 +4,12 @@ export declare class XMLTraversal {
     private startNode;
     constructor(startNode: XMLNode);
     find(query: string): XMLNode[];
-    private compare<T>(compare, left, right);
-    private intersect(a, b);
-    private nonEmptyIndices(arr);
-    private shuntingYard(contextNodes, node);
-    private handlePredicate(predicate, currentNodes);
-    private getAxisNodes(currentNodes, axis);
-    private intersectSelf(currentNode, axis, result);
-    private getAllDescendants(node, result);
+    private compare;
+    private intersect;
+    private nonEmptyIndices;
+    private shuntingYard;
+    private handlePredicate;
+    private getAxisNodes;
+    private intersectSelf;
+    private getAllDescendants;
 }

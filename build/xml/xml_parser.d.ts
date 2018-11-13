@@ -22,15 +22,15 @@ export declare class XMLParser {
     private entityBuffer;
     private readonly predefinedEntities;
     constructor();
-    private isQuote(c);
-    private error(message);
-    private newDocumentRoot();
-    private resetElement(selfClosing);
-    private closeTag();
-    private newElement();
-    private newProcessingInstruction(piTarget, piContent);
-    private newTextNode();
-    private newCommentNode(comment);
-    private addAttribute();
+    private isQuote;
+    private error;
+    private newDocumentRoot;
+    private resetElement;
+    private closeTag;
+    private newElement;
+    private newProcessingInstruction;
+    private newTextNode;
+    private newCommentNode;
+    private addAttribute;
     parse(str: string): XMLResult;
 }

@@ -8,7 +8,7 @@ export declare const enum NodeType {
     COMMENT = 6,
     TEXT = 7,
     NAMESPACE_NODE = 8,
-    NODE = 9,
+    NODE = 9
 }
 export declare const enum ParserState {
     ATTRIBUTE = 0,
@@ -42,7 +42,7 @@ export declare const enum ParserState {
     XML_PROLOG_ATTRIBUTE_NAME = 28,
     XML_PROLOG_ATTRIBUTE_VALUE = 29,
     XML_PROLOG_ATTRIBUTE_VALUE_QUOTED = 30,
-    XML_PROLOG_ENDING = 31,
+    XML_PROLOG_ENDING = 31
 }
 export declare const Char: RegExp;
 export declare const RestrictedChar: RegExp;
